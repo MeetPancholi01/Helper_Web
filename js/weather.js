@@ -48,7 +48,7 @@ sub.addEventListener("click", (e) => {
         if(isEmpty(curr_cond)){
           let data = curr.values[0];
           document.open();
-          document.write('<link rel="stylesheet" href="weather.css"/>');
+          document.write('<link rel="stylesheet" href="js/weather.css"/>');
           document.write("<h1 id = 'head' class='jstext head'>Today's Forecasted Data</h1>")
           document.write(`<h2 id = 'add' class='jstext'><i>${add}</i></h2>`)
           document.write(`<h2 class='jstext'> Average Temperature: ${data.temp}℃</h2>`)
@@ -71,7 +71,7 @@ sub.addEventListener("click", (e) => {
            let hum = curr_cond['humidity'];
            let icon = curr_cond['icon'];
            document.open();
-           document.write('<link rel="stylesheet" href="weather.css"/>');
+           document.write('<link rel="stylesheet" href="js/weather.css"/>');
            document.write("<h1 id = 'head' class='jstext head'>Current Weather</h1>")
            document.write(`<h2 id = 'add' class='jstext'><i>${addr}</i></h2>`)
            document.write(`<h2 class='jstext'>Temperature: ${temp}℃</h2>`)
